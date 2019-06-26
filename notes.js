@@ -52,3 +52,25 @@
 // Test for complex types
     // arrays, objects, etc
     // use toEqual()
+
+// Grouped Unit Tests
+    // we can use the describe function to groupe together unit tests
+    // the first agument is a description of what this group will be testing
+    // the second argument is the function that invokes the tests
+
+    const mySnowcone = {
+        delicious: true,
+        sour: false
+    }
+
+    // Syntax Example:
+    describe('my snowcone object', () => {
+        test('my snowcone is not sour', () => {
+            expect(mySnowcone.sour).toBeFalsy();
+        });
+
+        test('my snowcone to be delicious', () => {
+            expect(mySnowcone.delicious).toBeTruthy();
+        });
+    })
+

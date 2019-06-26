@@ -24,5 +24,5 @@ module.exports = {
     // return an array to check to see if it contains a value
     newArray: () => {
         return [1, 2, 3, 'tayte', 'stokes']
-    },
+    }
 };

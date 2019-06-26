@@ -66,3 +66,25 @@ test('newUser should return a new user object with a name prop equal to tayte an
 test('newArray should contain an elemenet of 2', () => {
     expect(functions.newArray()).toContain(2);
 });
+
+
+// Group Tests
+const mySnowcone = {
+    delicious: true,
+    sour: false,
+    quantity: 1
+};
+
+describe('my snowcone', () => {
+    test('my snowcone is not sour', () => {
+        expect(mySnowcone.sour).toBeFalsy();
+    });
+
+    test('my snowcone to be delicious', () => {
+        expect(mySnowcone.delicious).toBeTruthy();
+    });
+
+    test('my snowcone should only be one', () => {
+        expect(mySnowcone.quantity).toBe(1);
+    })
+})
